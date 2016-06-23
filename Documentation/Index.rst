@@ -58,4 +58,4 @@ Pits Site Statistics
 
 	Introduction/Index
 	UsersManual/Index
-	AdministratorManual/Index
+	Faq/Index

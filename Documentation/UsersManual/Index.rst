@@ -23,10 +23,10 @@ Configuration of analytic accounts
 * Once you installed you have to configure your analytic account (the one that you created for your site).
 * For adding an analytic account you have to provide four mandatory fields
 
-1 Account Title
-2 Service Account Email
-3 Key File Path
-4 Tracking ID
+(1) Account Title
+(2) Service Account Email
+(3) Key File Path
+(4) Tracking ID
 
 
 Target group: **Users**
@@ -40,10 +40,10 @@ Target group: **Users**
 
 * You can add any number of analytic account (helpful for multiple domain sites).
 
-Link to official documentation
-------------------------------
+Querying data in a configured account
+-------------------------------------
 
-Sphinx makes it easy to link to official TYPO3 documentation:
+Once an account is configured right you can query for data by choosing the metric,dimension and date rane parameters for that particular account.
 
 - :ref:`TYPO3 Tutorial for Editors <t3editors:start>`
 - :ref:`Getting Started Tutorial <t3start:start>`
