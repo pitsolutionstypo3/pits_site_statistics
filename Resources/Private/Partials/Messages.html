@@ -1,0 +1,7 @@
+<div class="message-container">
+    <ul class="typo3-messages">
+        <f:if condition="{alertmessage}">
+            <li class="alert alert-{alertmessage.type}"><f:format.raw>{alertmessage.message}</f:format.raw></li>
+        </f:if>
+    </ul>
+</div>

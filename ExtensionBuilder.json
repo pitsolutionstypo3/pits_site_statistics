@@ -1,0 +1,161 @@
+{
+    "modules": [
+        {
+            "config": {
+                "position": [
+                    28,
+                    129
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": false,
+                    "_default1_show": false,
+                    "_default2_new_create": false,
+                    "_default3_edit_update": false,
+                    "_default4_delete": false,
+                    "customActions": []
+                },
+                "name": "Statistics",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": true,
+                    "categorizable": false,
+                    "description": "",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": false,
+                    "type": "Entity",
+                    "uid": "224638939667"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "serviceAccountEmail",
+                            "propertyType": "String",
+                            "uid": "1068931449814"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "keyFileLocation",
+                            "propertyType": "Text",
+                            "uid": "808630055989"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "pageViews",
+                            "propertyType": "Integer",
+                            "uid": "481869786068"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "userViews",
+                            "propertyType": "Integer",
+                            "uid": "960616230988"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "var1Views",
+                            "propertyType": "Integer",
+                            "uid": "854116232508"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "var3Views",
+                            "propertyType": "Integer",
+                            "uid": "395722191894"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "var2Views",
+                            "propertyType": "Integer",
+                            "uid": "245243645034"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": []
+                }
+            }
+        }
+    ],
+    "properties": {
+        "backendModules": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "Statistics => index,filter,settings"
+                },
+                "description": "",
+                "key": "PitsSiteStatistics",
+                "mainModule": "web",
+                "name": "Pits Site Statistics",
+                "tabLabel": "Pits Site Statistics"
+            }
+        ],
+        "description": "",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 7.6.0-7.6.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "7.6.0-7.6.99",
+            "version": ""
+        },
+        "extensionKey": "pits_site_statistics",
+        "name": "Pits Site Statistics",
+        "originalExtensionKey": "",
+        "originalVendorName": "",
+        "persons": [
+            {
+                "company": "Pit Solutions ",
+                "email": "ricky.mk@pitsolutions.com",
+                "name": "Ricky Mathew",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [],
+        "vendorName": "PITS"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2016-04-30 01:31",
+        "extension_builder_version": "7.6.0",
+        "be_user": " (1)"
+    }
+}

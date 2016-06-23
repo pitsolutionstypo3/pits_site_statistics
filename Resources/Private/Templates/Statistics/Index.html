@@ -1,0 +1,29 @@
+<f:layout name="Default" />
+<f:section name="content">
+    <!--partial Header-->
+    <f:render partial="Header"></f:render>
+    <!--partial Header-->
+    <div class="container">
+        <div class="default-first-view">
+        </div>
+        <!--Messages-->
+        <f:render partial="Messages" arguments="{_all}"></f:render>
+        <!--messages-->
+        <f:if condition="{profile_found}==1">
+            <f:if condition="{noaccounts}==0">
+                <!--partial selectors-->
+                <f:render partial="Selectors" arguments="{_all}"></f:render>
+                <!--partial selectors-->
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pull-left">
+                    <h4 class="page-title">Analytics Data of {seletedAccount.webTitle} [ {gaParamters.metric} V/S {gaParamters.dimension} ] <span class="title__daterange">[{Dates.startdate} to {Dates.enddate}]</span></h4>
+                </div>
+                <!--partial Charts-->
+                <f:render partial="Charts" arguments="{_all}"></f:render>
+                <!--partial Charts-->
+                <!--partial ChartScript-->
+                <f:render partial="ChartScript" arguments="{_all}"></f:render>
+                <!--partial Chartscript-->
+            </f:if>
+        </f:if>
+    </div>
+</f:section>

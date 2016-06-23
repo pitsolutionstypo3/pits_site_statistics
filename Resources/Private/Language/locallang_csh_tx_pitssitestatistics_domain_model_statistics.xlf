@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-04-30T13:31:55Z" product-name="pits_site_statistics">
+		<header/>
+		<body>
+			<trans-unit id="service_account_email.description">
+				<source>serviceAccountEmail</source>
+			</trans-unit>
+			<trans-unit id="key_file_location.description">
+				<source>keyFileLocation</source>
+			</trans-unit>
+			<trans-unit id="page_views.description">
+				<source>pageViews</source>
+			</trans-unit>
+			<trans-unit id="web_title.description">
+				<source>WesiteTitle</source>
+			</trans-unit>
+			<trans-unit id="user_views.description">
+				<source>userViews</source>
+			</trans-unit>
+			<trans-unit id="var1_views.description">
+				<source>var1Views</source>
+			</trans-unit>
+			<trans-unit id="var3_views.description">
+				<source>var3Views</source>
+			</trans-unit>
+			<trans-unit id="var2_views.description">
+				<source>var2Views</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

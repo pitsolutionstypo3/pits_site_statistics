@@ -1,0 +1,12 @@
+
+ # Module configuration
+module.tx_pitssitestatistics_web_pitssitestatisticspitssitestatistics {
+	persistence {
+		storagePid = {$module.tx_pitssitestatistics_pitssitestatistics.persistence.storagePid}
+	}
+	view {
+		templateRootPaths.0 = {$module.tx_pitssitestatistics_pitssitestatistics.view.templateRootPath}
+		partialRootPaths.0 = {$module.tx_pitssitestatistics_pitssitestatistics.view.partialRootPath}
+		layoutRootPaths.0 = {$module.tx_pitssitestatistics_pitssitestatistics.view.layoutRootPath}
+	}
+}

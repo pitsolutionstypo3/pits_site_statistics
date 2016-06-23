@@ -1,0 +1,48 @@
+<f:if condition="{BarData}">
+<script type="text/javascript">
+$(document).ready(function(){
+//draw Bar chart
+Morris.Bar({
+    element: 'BarChart',
+    data: <f:format.htmlentities keepQuotes="1"> {BarData} </f:format.htmlentities>,
+    xLabelMargin: 50,
+    xLabelAngle: 75,
+    padding:20,
+    xkey: '{gaParamters.dimension}',
+    ykeys: ['{gaParamters.metric}'],
+    labels: ['{gaParamters.metric}']
+});
+});
+</script>
+</f:if>
+<f:if condition="{DonutData}">
+<script type="text/javascript">
+$(document).ready(function(){
+//draw Donut chart
+Morris.Donut({
+element: 'DonutChart',
+data: <f:format.htmlentities keepQuotes="1"> {DonutData} </f:format.htmlentities>,
+resize: true
+});
+});
+</script>
+</f:if>
+<f:if condition="{LineData}">
+<script type="text/javascript">
+$(document).ready(function(){
+    //draw Line chart 
+Morris.Line({
+    element: 'LineChart',
+    data: <f:format.htmlentities keepQuotes="1"> {LineData} </f:format.htmlentities>,
+    xkey: '{gaParamters.dimension}',
+    xLabelMargin: 0,
+    xLabelAngle: 75,
+    padding:20,
+    parseTime: false,
+    resize: true,
+    ykeys: ['{gaParamters.metric}'],
+    labels: ['{gaParamters.metric}']
+});
+});
+</script>
+</f:if>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-04-30T13:31:55Z" product-name="pits_site_statistics">
+		<header/>
+		<body>
+			<trans-unit id="tx_pitssitestatistics_domain_model_statistics">
+				<source>Statistics</source>
+			</trans-unit>
+			<trans-unit id="tx_pitssitestatistics_domain_model_statistics.service_account_email">
+				<source>Service Account Email</source>
+			</trans-unit>
+			<trans-unit id="tx_pitssitestatistics_domain_model_statistics.key_file_location">
+				<source>Key File Location</source>
+			</trans-unit>
+			<trans-unit id="tx_pitssitestatistics_domain_model_statistics.web_title">
+				<source>Web Site Title</source>
+			</trans-unit>
+			<trans-unit id="tx_pitssitestatistics_domain_model_statistics.default_account">
+				<source>Set as default Account</source>
+			</trans-unit>
+			<trans-unit id="tx_pitssitestatistics_domain_model_statistics.property_trackingid">
+				<source>Tracking ID</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

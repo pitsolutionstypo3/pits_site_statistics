@@ -1,0 +1,50 @@
+<f:layout name="Default" />
+<f:section name="content">
+    <!--partial Header-->
+    <f:render partial="Header"></f:render>
+    <!--partial Header-->
+    <div class="container">
+        <div class="default-first-view">
+        </div>
+
+        <!--Messages-->
+        <f:render partial="Messages" arguments="{_all}"></f:render>
+        <!--messages-->
+
+        <f:if condition="{profile_found}==1">
+        <!--partial selectors-->
+        <f:render partial="Selectors" arguments="{_all}"></f:render>
+        <!--partial selectors-->
+
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pull-left title-wrap">
+                <h4 class="page-title">Analytics Data of {seletedAccount.webTitle} [ {gaParamters.metric} V/S {gaParamters.dimension} ] <span class="title__daterange">[{Dates.startdate} to {Dates.enddate}]</span></h4>
+            </div>
+            <f:if condition="{dataResults}==1">
+                <f:then>
+                    <!--partial Charts-->
+                    <f:render partial="Charts" arguments="{_all}"></f:render>
+                    <!--partial charts-->
+                    <!--partial ChartScript-->
+                    <f:render partial="ChartScript" arguments="{_all}"></f:render>
+                    <!--partial Chartscript-->
+                </f:then>
+                <f:else>
+                    <f:if condition="{dataResults}==2">
+                        <f:then>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pull-left alert alert-danger">
+                                <p>These metric and dimension parameters '{gaParamters.metric}' and '{gaParamters.dimension}' can't be queried together for getting analytics data.Try with some other combinations.</p>
+                            </div>
+                        </f:then>
+                        <f:else>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pull-left alert alert-danger">
+                                <p>
+                                    <f:translate key="tx_pitssitestatistics.no_data" htmlEscape="false" />
+                                </p>
+                            </div>
+                        </f:else>
+                    </f:if>
+                </f:else>
+            </f:if>
+        </f:if>
+    </div>
+</f:section>

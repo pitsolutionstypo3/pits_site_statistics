@@ -1,0 +1,72 @@
+{namespace gss=PITS\PitsSiteStatistics\ViewHelpers}
+<div class="selectors">
+    <h4 class="page-title">Choose the parameters</h4>
+    <f:form action="filter">
+        <div class="form-group pull-left select__group">
+            <!-- <label for="account">Analytics Account</label> -->
+            <!-- <f:form.select name="account" options="{accounts}"  property="account" optionValueField="uid" optionLabelField="webTitle" /> -->
+            <f:if condition="{preselector.Account}">
+                <f:then>
+                    <f:form.select name="account" options="{accounts}" optionValueField="uid" optionLabelField="webTitle" value="{preselector.Account}" class="selectpicker" title="Select the account" />
+                </f:then>
+                <f:else>
+                    <f:form.select name="account" options="{accounts}" optionValueField="uid" optionLabelField="webTitle" class="selectpicker" title="Select the account" />
+                </f:else>
+            </f:if>
+        </div>
+        <div class="form-group pull-left select__group">
+            <!-- <label for="metrics">Analytics metrics</label> -->
+            <f:if condition="{preselector.Metric}">
+                <f:then>
+                    <gss:select name="metrics" options="{metrics}" value="{preselector.Metric}" class="selectpicker" title="Select the Analytics metrics" />
+                </f:then>
+                <f:else>
+                    <gss:select name="metrics" options="{metrics}" class="selectpicker" title="Select the Analytics metrics" />
+                </f:else>
+            </f:if>
+        </div>
+        <div class="form-group pull-left select__group">
+            <!-- <label for="dimensions">Analytics dimensions</label> -->
+            <f:if condition="{preselector.Dimension}">
+                <f:then>
+                    <gss:select name="dimensions" options="{dimensions}" value="{preselector.Dimension}" class="selectpicker" title="Select the Analytics dimension" />
+                </f:then>
+                <f:else>
+                    <gss:select name="dimensions" options="{dimensions}" class="selectpicker" title="Select the Analytics dimension" />
+                </f:else>
+            </f:if>
+        </div>
+        <div class="form-group pull-left select__group">
+            <div class="input-group input-daterange">
+                <input type="text" class="form-control" name="startdate" id ="startdate" value="{Dates.startdate}" data-date-start-date="">
+                <span class="input-group-addon">to</span>
+                <input type="text" class="form-control" name="enddate" id="enddate" value="{Dates.enddate}" data-date-start-date="" placeholder="">
+            </div>
+        </div>
+        <div class="form-group pull-left">
+            <!-- <f:link.action action="index" class="btn btn-danger">Reset</f:link.action> -->
+            <f:form.submit class="btn btn-default" value="Get Data" />
+        </div>
+    </f:form>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+    //Datepicker settings
+    $('.input-daterange input').each(function() {
+        $(this).datepicker({
+            format: 'yyyy-mm-dd',
+            endDate: '+0d'
+            });
+        //$(this).datepicker("clearDates");
+    });
+
+    $('#startdate').on('changeDate', function(ev){
+        $('#enddate').datepicker("clearDates");
+        //$('#startdate').datepicker("clearDates");
+        var minDate = new Date(ev.date.valueOf());
+        var dp_tommorow = new Date(minDate.getFullYear(), minDate.getMonth(), minDate.getDate()+1);
+        $('#enddate').datepicker('setStartDate', dp_tommorow);
+    });
+    // console.log(<f:format.htmlentities keepQuotes="1"> {BarData} </f:format.htmlentities>);
+});
+</script>
