@@ -13,22 +13,32 @@ Users manual
 
 Documentation of how to use the extension, how it works, how to apply it, if it's a website plugin.
 
-Language should be non-technical, explaining, using small examples. Don't use to many acronyms unless they have been explained.
+Installation
+------------
+* You can install the extension using extension manager.
+* Once installed it will appear under 'system' section.
 
-Examples: For the "News" plugin this would be a manual showing how to create the news items, explaining the options etc.
+Configuration of analytic accounts
+----------------------------------
+* Once you installed you have to configure your analytic account (the one that you created for your site).
+* For adding an analytic account you have to provide four mandatory fields
 
-Provide screenshots of a neutral Backend such as the Backend of the Introduction Package for instance. Have in mind that the User manual could possibly be re-used in a larger documentation compilation, for example when a company generates a documentation for its client.
+1 Account Title
+2 Service Account Email
+3 Key File Path
+4 Tracking ID
+
 
 Target group: **Users**
 
-.. figure:: ../Images/UserManual/BackendView.png
-	:width: 500px
+.. figure:: ../Images/UserManual/create-account.png
+	:width: 800px
 	:alt: Backend view
 
-	Default Backend view (caption of the image)
+	Account creation form
 
-	The Backend view of TYPO3 after the user has clicked on module "Page". (legend of the image)
 
+* You can add any number of analytic account (helpful for multiple domain sites).
 
 Link to official documentation
 ------------------------------
