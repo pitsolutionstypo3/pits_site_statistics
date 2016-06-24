@@ -11,7 +11,6 @@
 Users manual
 ============
 
-Documentation of how to use the extension, how it works, how to apply it, if it's a website plugin.
 
 Installation
 ------------
@@ -29,7 +28,6 @@ Configuration of analytic accounts
 (4) Tracking ID
 
 
-Target group: **Users**
 
 .. figure:: ../Images/UserManual/create-account.png
 	:width: 800px
@@ -43,17 +41,12 @@ Target group: **Users**
 Querying data in a configured account
 -------------------------------------
 
-Once an account is configured right you can query for data by choosing the metric,dimension and date rane parameters for that particular account.
+Once an account is configured right you can query for data by choosing the metric,dimension and date range parameters for that particular account.
 
-- :ref:`TYPO3 Tutorial for Editors <t3editors:start>`
-- :ref:`Getting Started Tutorial <t3start:start>`
+See the plotted analytics data got while we queried 'Hits' against 'Country'.
 
-and you may even link to a very specific chapter explaining how to :ref:`create a browser condition <t3tsref:condition-browser>` within the TypoScript Reference.
+.. figure:: ../Images/UserManual/graphical_view.png
+	:width: 800px
+	:alt: plotted data
 
-For a complete reference of available cross-link prefixes, please consult file ``_make/conf.py``.
-
-
-FAQ
-^^^
-
-Possible subsection: FAQ
+	'Hits' against 'Country' data
