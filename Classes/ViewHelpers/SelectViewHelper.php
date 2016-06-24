@@ -52,7 +52,7 @@ namespace PITS\PitsSiteStatistics\ViewHelpers;
  * So, in the above example, the method $user->getId() is called to retrieve the key, and $user->getFirstName() to retrieve the displayed value of each entry.
  *
  * The "value" property now expects a domain object, and tests for object equivalence.
- *
+ * This viewhelper overrides fluid select viewhelper to add <optgroup> tags
  * @api
  */
 class SelectViewHelper extends \TYPO3\CMS\Fluid\ViewHelpers\Form\AbstractFormFieldViewHelper

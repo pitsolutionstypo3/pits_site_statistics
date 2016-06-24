@@ -413,14 +413,10 @@ class StatisticsController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContr
      */
     public function getMetrics()
     {
-
         $allMetrics = [];
         $metadata   = $this->metadata();
-
         foreach ($metadata['metrics'] as $key => $value) {
-
             if (sizeof($value) > 1) {
-
                 foreach ($value as $metric) {
                     $allMetrics[$key][$metric->id] = $metric->attributes->uiName;
                 }
@@ -439,11 +435,8 @@ class StatisticsController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContr
         $allDimensions = [];
         $metadata      = $this->metadata();
         foreach ($metadata['dimensions'] as $key => $value) {
-
             if (sizeof($value) > 1) {
-
                 foreach ($value as $dimension) {
-
                     $allDimensions[$key][$dimension->id] = $dimension->attributes->uiName;
                 }
             }
