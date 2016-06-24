@@ -5,6 +5,7 @@
         <div class="form-group pull-left select__group">
             <!-- <label for="account">Analytics Account</label> -->
             <!-- <f:form.select name="account" options="{accounts}"  property="account" optionValueField="uid" optionLabelField="webTitle" /> -->
+            <label for="account">Analytics Account</label>
             <f:if condition="{preselector.Account}">
                 <f:then>
                     <f:form.select name="account" options="{accounts}" optionValueField="uid" optionLabelField="webTitle" value="{preselector.Account}" class="selectpicker" title="Select the account" />
@@ -15,7 +16,7 @@
             </f:if>
         </div>
         <div class="form-group pull-left select__group">
-            <!-- <label for="metrics">Analytics metrics</label> -->
+            <label for="metrics">Analytics metrics</label>
             <f:if condition="{preselector.Metric}">
                 <f:then>
                     <gss:select name="metrics" options="{metrics}" value="{preselector.Metric}" class="selectpicker" title="Select the Analytics metrics" />
@@ -26,7 +27,7 @@
             </f:if>
         </div>
         <div class="form-group pull-left select__group">
-            <!-- <label for="dimensions">Analytics dimensions</label> -->
+            <label for="dimensions">Analytics dimensions</label>
             <f:if condition="{preselector.Dimension}">
                 <f:then>
                     <gss:select name="dimensions" options="{dimensions}" value="{preselector.Dimension}" class="selectpicker" title="Select the Analytics dimension" />
@@ -37,6 +38,7 @@
             </f:if>
         </div>
         <div class="form-group pull-left select__group">
+            <label>Date Range</label>
             <div class="input-group input-daterange">
                 <input type="text" class="form-control" name="startdate" id ="startdate" value="{Dates.startdate}" data-date-start-date="">
                 <span class="input-group-addon">to</span>
@@ -44,8 +46,7 @@
             </div>
         </div>
         <div class="form-group pull-left">
-            <!-- <f:link.action action="index" class="btn btn-danger">Reset</f:link.action> -->
-            <f:form.submit class="btn btn-default" value="Get Data" />
+            <f:form.submit class="btn btn-primary" value="Get Data" />
         </div>
     </f:form>
 </div>

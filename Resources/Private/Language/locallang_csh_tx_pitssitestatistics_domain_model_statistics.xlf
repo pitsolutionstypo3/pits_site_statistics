@@ -9,23 +9,8 @@
 			<trans-unit id="key_file_location.description">
 				<source>keyFileLocation</source>
 			</trans-unit>
-			<trans-unit id="page_views.description">
-				<source>pageViews</source>
-			</trans-unit>
 			<trans-unit id="web_title.description">
 				<source>WesiteTitle</source>
-			</trans-unit>
-			<trans-unit id="user_views.description">
-				<source>userViews</source>
-			</trans-unit>
-			<trans-unit id="var1_views.description">
-				<source>var1Views</source>
-			</trans-unit>
-			<trans-unit id="var3_views.description">
-				<source>var3Views</source>
-			</trans-unit>
-			<trans-unit id="var2_views.description">
-				<source>var2Views</source>
 			</trans-unit>
 		</body>
 	</file>

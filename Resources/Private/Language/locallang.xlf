@@ -12,26 +12,14 @@
 			<trans-unit id="tx_pitssitestatistics_domain_model_statistics.key_file_location">
 				<source>Key File Location</source>
 			</trans-unit>
-			<trans-unit id="tx_pitssitestatistics_domain_model_statistics.page_views">
-				<source>Page Views</source>
-			</trans-unit>
-			<trans-unit id="tx_pitssitestatistics_domain_model_statistics.user_views">
-				<source>User Views</source>
-			</trans-unit>
-			<trans-unit id="tx_pitssitestatistics_domain_model_statistics.var1_views">
-				<source>Var1 Views</source>
-			</trans-unit>
-			<trans-unit id="tx_pitssitestatistics_domain_model_statistics.var3_views">
-				<source>Var3 Views</source>
-			</trans-unit>
-			<trans-unit id="tx_pitssitestatistics_domain_model_statistics.var2_views">
-				<source>Var2 Views</source>
-			</trans-unit>
 			<trans-unit id="tx_pitssitestatistics.main_title">
 				<source>Pits Site Statistics</source>
 			</trans-unit>
 			<trans-unit id="tx_pitssitestatistics.no_data">
 				<source>Sorry..!No data found while matching these metric and dimension parameters for the specified date range.</source>
+			</trans-unit>
+			<trans-unit id="tx_pitssitestatistics.no_account">
+				<source>Sorry..!No account found.</source>
 			</trans-unit>
 		</body>
 	</file>
