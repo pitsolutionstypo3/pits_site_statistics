@@ -40,7 +40,7 @@ class Statistics extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @validate EmailAddress
      */
     protected $serviceAccountEmail = '';
-    
+
     /**
      * keyFileLocation
      *
@@ -49,14 +49,14 @@ class Statistics extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @validate PITS\PitsSiteStatistics\Validation\Validator\KeyFileValidator
      */
     protected $keyFileLocation = '';
-    
+
     /**
      * defaultAccount
      * @var int
      */
     protected $defaultAccount = 0;
-    
-     /**
+
+    /**
      * webTitle
      *@validate NotEmpty
      * @validate PITS\PitsSiteStatistics\Validation\Validator\WebTitleValidator
@@ -64,7 +64,7 @@ class Statistics extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      */
     protected $webTitle = '';
 
-     /**
+    /**
      * propertyTrackingid
      *@validate NotEmpty
      * @var string
@@ -72,11 +72,11 @@ class Statistics extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected $propertyTrackingid = '';
 
     /**
-    * StatisticsRepository
-    *
-    * @var PITS\PitsSiteStatistics\Domain\Repository\StatisticsRepository
-    * @inject
-    */
+     * StatisticsRepository
+     *
+     * @var PITS\PitsSiteStatistics\Domain\Repository\StatisticsRepository
+     * @inject
+     */
     protected $statisticsRepository;
 
     /**
@@ -88,7 +88,7 @@ class Statistics extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     {
         return $this->serviceAccountEmail;
     }
-    
+
     /**
      * Sets the serviceAccountEmail
      *
@@ -99,7 +99,7 @@ class Statistics extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     {
         $this->serviceAccountEmail = $serviceAccountEmail;
     }
-    
+
     /**
      * Returns the keyFileLocation
      *
@@ -109,7 +109,7 @@ class Statistics extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     {
         return $this->keyFileLocation;
     }
-    
+
     /**
      * Sets the keyFileLocation
      *
@@ -129,7 +129,7 @@ class Statistics extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     {
         return $this->propertyTrackingid;
     }
-    
+
     /**
      * Sets the propertyTrackingid
      * @param string $propertyTrackingid
@@ -139,8 +139,7 @@ class Statistics extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     {
         $this->propertyTrackingid = $propertyTrackingid;
     }
-    
-    
+
     /**
      * Returns the defaultAccount field vlue
      *
@@ -150,7 +149,7 @@ class Statistics extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     {
         return $this->defaultAccount;
     }
-    
+
     /**
      * Sets the defaultAccount
      *
@@ -172,7 +171,7 @@ class Statistics extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
         return $this->webTitle;
     }
 
-     /**
+    /**
      * Sets the webTitle
      *
      * @param string $websiteTitle
@@ -183,17 +182,4 @@ class Statistics extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
         $this->webTitle = $webTitle;
     }
 
-    //  public function getAll(){
-    //   $all = [];
-    //   $analyticsAccounts = $this->statisticsRepository->findAll()->toArray();
-    //   foreach ($analyticsAccounts as $key => $values) {
-    //      //\TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump($values);
-    //             // foreach ($values as $value) {
-    //                $all[$values->uid] = $values->webTitle;
-    //             // }
-    //   }
-
-    //   \TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump($all);
-    // }
-    
 }

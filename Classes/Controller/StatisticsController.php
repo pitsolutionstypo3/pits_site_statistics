@@ -91,7 +91,7 @@ class StatisticsController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContr
         $this->defaultMetrics   = 'ga:sessions';
         $this->defaultDimension = 'ga:country';
         $now                    = new \DateTime();
-        //sets defalt start date and end date
+        //sets default start date and end date
         $end_date               = $now->format('Y-m-d');
         $start_date             = $now->modify('-1 month')->format('Y-m-d');
         $this->defaultStartDate = $start_date;
@@ -111,7 +111,7 @@ class StatisticsController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContr
             $alertmessage = $this->request->getArgument('alertmessage');
             $this->view->assign('alertmessage', $alertmessage);
         }
-        $profile_found = 0;
+        $profile_found      = 0;
         $noaccounts         = 1;
         $dates              = [];
         $dates['startdate'] = $this->defaultStartDate;
@@ -154,10 +154,10 @@ class StatisticsController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContr
                 $this->setClient($client);
                 $this->setAnalytics($analytics);
 
-                $profile = $this->googleAnalytics->getFirstProfileId($analytics, $trackingId);
+                $profile       = $this->googleAnalytics->getFirstProfileId($analytics, $trackingId);
                 $profile_found = 1;
-                $results = $this->googleAnalytics->getResults($analytics, $profile, $this->defaultStartDate, $this->defaultEndDate, $this->defaultMetrics, $this->defaultDimension);
-                $rows    = $results->getRows();
+                $results       = $this->googleAnalytics->getResults($analytics, $profile, $this->defaultStartDate, $this->defaultEndDate, $this->defaultMetrics, $this->defaultDimension);
+                $rows          = $results->getRows();
 
                 //Format and output data as JSON
                 $Barchart   = json_encode($this->googleAnalytics->drawBarChart($rows, $this->defaultMetrics, $this->defaultDimension));
@@ -349,7 +349,6 @@ class StatisticsController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContr
         $arguments                            = [];
         $arguments['alertmessage']['message'] = '<i class="fa fa-check" aria-hidden="true"></i> A new account \'' . $statistics->getWebTitle() . '\' has been created succesfully.';
         $arguments['alertmessage']['type']    = 'success';
-        //$this->redirect('index');
         $this->redirect('list', 'Statistics', 'PitsSiteStatistics', $arguments);
     }
 
@@ -417,12 +416,12 @@ class StatisticsController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContr
 
         $allMetrics = [];
         $metadata   = $this->metadata();
+
         foreach ($metadata['metrics'] as $key => $value) {
-            # code...
+
             if (sizeof($value) > 1) {
 
                 foreach ($value as $metric) {
-                    # code...
                     $allMetrics[$key][$metric->id] = $metric->attributes->uiName;
                 }
             }
@@ -440,11 +439,11 @@ class StatisticsController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContr
         $allDimensions = [];
         $metadata      = $this->metadata();
         foreach ($metadata['dimensions'] as $key => $value) {
-            # code...
+
             if (sizeof($value) > 1) {
 
                 foreach ($value as $dimension) {
-                    # code...
+
                     $allDimensions[$key][$dimension->id] = $dimension->attributes->uiName;
                 }
             }

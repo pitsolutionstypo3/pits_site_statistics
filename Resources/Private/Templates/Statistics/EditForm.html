@@ -53,23 +53,23 @@
                     </div>
                 </f:if>
             </f:form.validationResults>
-            <div class="form-group">
+            <div class="form-group col-lg-7 col-md-7 col-sm-7 col-xs-12">
                 <label>Account Title</label>
                 <f:form.textfield property="webTitle" class="form-control" />
             </div>
-            <div class="form-group">
+            <div class="form-group col-lg-7 col-md-7 col-sm-7 col-xs-12">
                 <label>Service Account Email <i class="fa fa-question-circle custom-tooltip" aria-hidden="true" rel="tooltip-label" title="provide the Service Account Email obtained while setting the analytics service account" id=""></i></label>
                 <f:form.textfield property="serviceAccountEmail" class="form-control" />
             </div>
-            <div class="form-group">
+            <div class="form-group col-lg-7 col-md-7 col-sm-7 col-xs-12">
                 <label>Keyfile Path <i class="fa fa-question-circle custom-tooltip" aria-hidden="true" rel="tooltip-label" title="provide the path of p12 keyfile obtained while setting the analytics service account" id=""></i></label>
                 <f:form.textfield property="keyFileLocation" class="form-control" />
             </div>
-             <div class="form-group">
+            <div class="form-group col-lg-7 col-md-7 col-sm-7 col-xs-12">
                 <label>Tracking ID <i class="fa fa-question-circle custom-tooltip" aria-hidden="true" rel="tooltip-label" title="provide the property tracking id of your analytics service account.eg UA-76703401-1" id=""></i></label>
                 <f:form.textfield property="propertyTrackingid" class="form-control" />
             </div>
-            <div class="form-group">
+            <div class="form-group col-lg-7 col-md-7 col-sm-7 col-xs-12">
                 <label>Set as default account <i class="fa fa-question-circle custom-tooltip" aria-hidden="true" rel="tooltip-label" title="provide the path of p12 keyfile obtained while setting the analytics service account" id=""></i></label>
                 <f:if condition="{statistics.uid}">
                     <f:then>
@@ -79,15 +79,16 @@
                         <f:form.checkbox property="defaultAccount" value="1" />
                     </f:else>
                 </f:if>
-                <!-- <input type="checkbox" property="DefaultViews" value="Car">test -->
             </div>
-            <f:if condition="{statistics.uid}">
-                <f:then>
-                    <f:form.submit value="Update Account" class="btn btn-primary" />
-                </f:then>
-                <f:else>
-                    <f:form.submit value="Create Account" class="btn btn-primary" />
-                </f:else>
-            </f:if>
+            <div class="form-group col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                <f:if condition="{statistics.uid}">
+                    <f:then>
+                        <f:form.submit value="Update Account" class="btn btn-primary" />
+                    </f:then>
+                    <f:else>
+                        <f:form.submit value="Create Account" class="btn btn-primary" />
+                    </f:else>
+                </f:if>
+            </div>
         </f:form>
 </f:section>

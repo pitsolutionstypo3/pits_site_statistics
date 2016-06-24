@@ -76,13 +76,12 @@ class AnalyticsLibrary
         $this->client              = new \Google_Client();
         $this->client->setApplicationName("HelloAnalytics");
         $this->analytics = new \Google_Service_Analytics($this->client);
-        if(file_exists($this->keyFileLocation)){
-        $key             = file_get_contents($this->keyFileLocation);
+        if (file_exists($this->keyFileLocation)) {
+            $key = file_get_contents($this->keyFileLocation);
+        } else {
+            throw new \Exception('Key file not found.');
         }
-        else{
-          throw new \Exception('Key file not found.');  
-        }
-        $cred            = new \Google_Auth_AssertionCredentials(
+        $cred = new \Google_Auth_AssertionCredentials(
             $this->serviceAccountEmail,
             array(\Google_Service_Analytics::ANALYTICS_READONLY),
             $key
@@ -126,7 +125,7 @@ class AnalyticsLibrary
                     }
                 }
                 if ($firstPropertyId == '') {
-                    $firstPropertyId = $items[0]->getId();
+                    throw new \Exception('No google analytic properties found which matches your account\'s Tracking ID.');
                 }
                 // Get the list of views (profiles) for the authorized user.
                 $profiles = $analytics->management_profiles
