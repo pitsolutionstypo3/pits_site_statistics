@@ -13,7 +13,7 @@
 $EM_CONF[$_EXTKEY] = array(
 	'title' => 'Pits Site Statistics',
 	'description' => 'An extension uses Google analytics data to plot the Website analytics graphically.',
-	'category' => 'plugin',
+	'category' => 'module',
 	'author' => 'Ricky Mathew',
 	'author_email' => 'ricky.mk@pitsolutions.com',
 	'state' => 'stable',
