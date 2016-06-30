@@ -59,3 +59,4 @@ Pits Site Statistics
 	Introduction/Index
 	UsersManual/Index
 	Faq/Index
+	ChangeLog/Index
