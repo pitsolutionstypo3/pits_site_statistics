@@ -13,7 +13,7 @@
 				<source>Key File Location</source>
 			</trans-unit>
 			<trans-unit id="tx_pitssitestatistics.main_title">
-				<source>Pits Site Statistics</source>
+				<source>Site Statistics</source>
 			</trans-unit>
 			<trans-unit id="tx_pitssitestatistics.no_data">
 				<source>Sorry..!No data found while matching these metric and dimension parameters for the specified date range.</source>

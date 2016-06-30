@@ -5,29 +5,25 @@
 <link rel="stylesheet" href="../typo3conf/ext/pits_site_statistics/Resources/Public/css/bootstrap-select.min.css">
 <link rel="stylesheet" href="../typo3conf/ext/pits_site_statistics/Resources/Public/css/bootstrap-datepicker3.css">
 <link rel="stylesheet" href="../typo3conf/ext/pits_site_statistics/Resources/Public/css/main.css">
-
 <!--Loading Js files-->
 <script src="../typo3conf/ext/pits_site_statistics/Resources/Public/js/jquery.js"></script>
-
-
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pull-left" id="ext_header">
-        <div class="container">
-            <h4 class="pull-left"> 
-               <f:link.action action="index" >
-                       <f:image class="bg-logo" src="{f:uri.resource(path:'Icons/ext_icon.gif')}" /> 
-                       <span class ="ext_title">
-                       <f:translate key="tx_pitssitestatistics.main_title" htmlEscape="false" />
-                       </span>
-                </f:link.action>
-            </h4>
-             <div class="settings-wrapper pull-right">   
-             <f:link.action action="index"><button class="btn btn-default" ><i class="fa fa-home fa-lg fa__custom__home" aria-hidden="true"></i></button></f:link.action>
-
-             <f:link.action action="addForm"><button class="btn btn-default" > <i class="fa fa-plus" aria-hidden="true"></i> Add account</button></f:link.action>
-
-            <f:link.action action="list"><button class="btn btn-default" > <i class="fa fa-list" aria-hidden="true"></i> All accounts</button></f:link.action>
-
-             </div>
+    <div class="container">
+        <h4 class="pull-left"> 
+           <span class ="ext_title">
+           <f:translate key="tx_pitssitestatistics.main_title" htmlEscape="false" />
+           </span>
+        </h4>
+        <div class="settings-wrapper pull-right">
+            <f:link.action action="index">
+                <button class="btn btn-default"><i class="fa fa-home fa-lg fa__custom__home" aria-hidden="true"></i></button>
+            </f:link.action>
+            <f:link.action action="addForm">
+                <button class="btn btn-default"> <i class="fa fa-plus" aria-hidden="true"></i> Add account</button>
+            </f:link.action>
+            <f:link.action action="list">
+                <button class="btn btn-default"> <i class="fa fa-list" aria-hidden="true"></i> All accounts</button>
+            </f:link.action>
         </div>
+    </div>
 </div>
-  
