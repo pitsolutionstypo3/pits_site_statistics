@@ -17,6 +17,11 @@ Installation
 * You can install the extension using extension manager.
 * Once installed it will appear under 'system' section.
 
+Requirements
+------------
+* cURL Library.
+* Typo3 7.6.0 and Above.
+
 Configuration of analytic accounts
 ----------------------------------
 * Once you installed you have to configure your analytic account (the one that you created for your site).
