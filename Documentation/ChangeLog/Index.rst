@@ -20,4 +20,6 @@ Change Log
 
 - 1.0.0 Initial Alpha version.
 
-- 1.0.1 Stable version with Updated Documenation.
+- 1.0.1 Stable version with Updated documenation.
+
+- 1.0.2 Stable version with Updated documenation and removed dependency that   caused error.
