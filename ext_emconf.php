@@ -11,7 +11,7 @@
  ***************************************************************/
 
 $EM_CONF[$_EXTKEY] = array(
-	'title' => 'Pits Site Statistics',
+	'title' => 'Site Statistics',
 	'description' => 'An extension uses Google analytics data to plot the Website analytics graphically.',
 	'category' => 'module',
 	'author' => 'Ricky Mathew',

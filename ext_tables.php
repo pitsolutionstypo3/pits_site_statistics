@@ -26,7 +26,7 @@ if (TYPO3_MODE === 'BE') {
 
 }
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript', 'Pits Site Statistics');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript', 'Site Statistics');
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_pitssitestatistics_domain_model_statistics', 'EXT:pits_site_statistics/Resources/Private/Language/locallang_csh_tx_pitssitestatistics_domain_model_statistics.xlf');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_pitssitestatistics_domain_model_statistics');

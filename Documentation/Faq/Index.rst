@@ -17,7 +17,7 @@ FAQ
 How to get service account email and key file?
 ---------------------------------------------
 
-Service account email and key files are two credentials provided by Google for authenticating a user before retrieving the analytic data associated with an anaytic account. so we need to furnish these details for creating an account in Pits Site Statistics module.
+Service account email and key files are two credentials provided by Google for authenticating a user before retrieving the analytic data associated with an anaytic account. so we need to furnish these details for creating an account in Site Statistics module.
 
 Before you go to get your credentials you have to enable the analytics api in your Google Developer Console https://console.developers.google.com/ .See the screen shots.
 
