@@ -281,8 +281,17 @@ class StatisticsController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContr
             if (!is_object($results)) {
                 $dataresults = 2;
             } else {
-                $rows = $results->getRows();
-
+                $rows  = $results->getRows();
+                $index = 0;
+                if (sizeof($rows)) {
+                    foreach ($rows as $row) {
+                        if ($row[0] == '(not set)') {
+                            //remove the 'not set' data.
+                            unset($rows[$index]);
+                        }
+                        $index++;
+                    }
+                }
                 if (sizeof($rows) > 0) {
                     $dataresults = 1;
                     //Format and output data as JSON
