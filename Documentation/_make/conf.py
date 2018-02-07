@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Site Statistics documentation build configuration file, created by
+# Pits Site Statistics documentation build configuration file, created by
 # TYPO3 extension sphinx on Thu, 23 Jun 2016 15:27:45 +0530.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -49,7 +49,7 @@ source_suffix = '.rst'
 master_doc = 'Index'
 
 # General information about the project.
-project = u'Site Statistics'
+project = u'Pits Site Statistics'
 copyright = u'2016, Ricky Mathew'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -203,7 +203,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    ('Index', 'pits_site_statistics.tex', u'Site Statistics',
+    ('Index', 'pits_site_statistics.tex', u'Pits Site Statistics',
      u'Ricky Mathew', 'manual'),
 ]
 
@@ -244,7 +244,7 @@ latex_documents = [
 # would mean that specific document would be compressed
 # regardless of the global pdf_compressed setting.
 pdf_documents = [
-    ('Index', 'pits_site_statistics', u'Site Statistics',
+    ('Index', 'pits_site_statistics', u'Pits Site Statistics',
      u'Ricky Mathew'),
 ]
 
@@ -332,7 +332,7 @@ pdf_fit_background_mode = 'scale'
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('Index', 'pits_site_statistics', u'Site Statistics',
+    ('Index', 'pits_site_statistics', u'Pits Site Statistics',
      [u'Ricky Mathew'], 1)
 ]
 
@@ -346,8 +346,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    ('Index', 'pits_site_statistics', u'Site Statistics',
-     u'Ricky Mathew', 'Site Statistics', 'One line description of project.',
+    ('Index', 'pits_site_statistics', u'Pits Site Statistics',
+     u'Ricky Mathew', 'Pits Site Statistics', 'One line description of project.',
      'Miscellaneous'),
 ]
 

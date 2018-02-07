@@ -5,13 +5,13 @@
 ---
 conf.py:
   copyright: 2016
-  project: Site Statistics (Deutsch)
+  project: Pits Site Statistics (Deutsch)
   version: 1.0
   release: 1.0.0
   latex_documents:
   - - Index
     - pits_site_statistics.tex
-    - Site Statistics
+    - Pits Site Statistics
     - Ricky Mathew
     - manual
   latex_elements:
